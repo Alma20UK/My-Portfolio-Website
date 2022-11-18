@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <script defer src="Scripts/script.js"></script>
+    <title>Alex Setten - Web Development</title>
+    <meta name="description" content="Alex Setten Web Design and Development">
+    <meta name="keywords" content="Alex Setten Web Design and Development">
+</head>
+
+<body>
+    <div class="mobileWrapper"> <!-- Mobile phone wrapper to prevent overflow (due to the nature of the animated background) -->
+        <section>
+
+            <!-- Elements used to create all of the animated stars within the background-->
+            <div id="stars1"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+
+            <!-- Navigation menu with a link back to the homepage and a link to my GitHub page-->
+            <nav>
+                <a href="index.html" title="Home Page">
+                    <h1 class="homepageHeader">Alex Setten - Web Development</h1>
+                </a>
+                <div class="gitLogo">
+                    <a href="https://github.com/Alma20UK" target="_blank">
+                        <image src="Media/GitLogo.png" alt="GitHub Logo"></image>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- 5 Static stars that overlay the animated background -->
+            <div class="staticStar1 star"></div>
+            <div class="staticStar2 star"></div>
+            <div class="staticStar3 star"></div>
+            <div class="staticStar4 star"></div>
+            <div class="staticStar5 star"></div>
+
+            <!-- Animated shooting stars that 'fire' periodically -->
+            <div class="shootingStar1 shootingStar"></div>
+            <div class="shootingStar2 shootingStar"></div>
+            <div class="shootingStar3 shootingStar"></div>
+            <div class="shootingStar4 shootingStar"></div>
+            <div class="shootingStar5 shootingStar"></div>
+
+            <!-- A container of all the planets animated in my 'solar system'. Displays on laptop/PC but not smaller screens like mobile-->
+            <div class="planetContainer">
+                <a href="NEMA.html">
+                    <div class="planet nonMobileMoon" id="planet" onmouseover="nemaLabel()"
+                        onmouseout="hideNemaLabel()">
+                        <div class="label" id="nemaLabel">NEMA Machine UI</div>
+                    </div>
+                </a>
+
+                <a href="savannahDirector.html">
+                    <div class="moon1 nonMobileMoon" id="moon1" onmouseover="savannahLabel()"
+                        onmouseout="hideSavannahLabel()">
+                        <div class="label" id="savannahLabel">Savannah - Film Director</div>
+                    </div>
+                </a>
+                <a href="nestleProperty.html">
+                    <div class="moon2 nonMobileMoon" id="moon2" onmouseover="nestleLabel()"
+                        onmouseout="hideNestleLabel()">
+                        <div class="label" id="nestleLabel">Nestle Property</div>
+                    </div>
+                </a>
+                <a href="levelDesign.html">
+                    <div class="moon3 nonMobileMoon" id="moon3" onmouseover="levelLabel()"
+                        onmouseout="hideLevelLabel()">
+                        <div class="label" id="levelLabel">Level Design</div>
+                    </div>
+                </a>
+                <a href="beerColour.html">
+                    <div class="moon4 nonMobileMoon" id="moon4" onmouseover="beerLabel()" onmouseout="hideBeerLabel()">
+                        <div class="label" id="beerLabel">Beer Colour App</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- A container of all the planets and moons that only displays on mobile screens -->
+            <div class="planetContainerMobile">
+                <a href="NEMA.html">
+                    <div class="planet">
+                        <div class="label">NEMA Machine UI</div>
+                    </div>
+                </a>
+                <a href="savannahDirector.html">
+                    <div class="moon1">
+                        <div class="label">Savannah - Film Director</div>
+                    </div>
+                </a>
+                <a href="nestleProperty.html">
+                    <div class="moon2">
+                        <div class="label" id="nestleLabel">Nestle Property</div>
+                    </div>
+                </a>
+                <a href="beerColour.html">
+                    <div class="moon4">
+                        <div class="label">Beer Colour App</div>
+                    </div>
+                </a>
+                <a href="levelDesign.html">
+                    <div class="moon3">
+                        <div class="label">Level Design</div>
+                    </div>
+                </a>
+            </div>
+    </div>
+
+    </section>
+
+    </div>
+
+
+</body>
+
+</html>

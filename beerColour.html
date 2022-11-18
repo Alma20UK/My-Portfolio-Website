@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <script defer src="Scripts/script.js"></script>
+    <title>Alex Setten - Web Development</title>
+    <meta name="description" content="Alex Setten Web Design and Development">
+    <meta name="keywords" content="Alex Setten Web Design and Development">
+</head>
+
+<body>
+    <div class="mobileWrapper"> <!-- Mobile phone wrapper to prevent overflow (due to the nature of the animated background) -->
+        <section> <!-- This 'section' element is used to create the animated starry background -->
+
+            <!-- Elements used to create all of the animated stars within the background -->
+            <div id="stars1"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+
+            <!-- Navigation menu with a link back to the homepage and a link to my GitHub page -->
+            <nav>
+                <a href="index.html">
+                    <h1 class="homepageHeader">Alex Setten - Web Development</h1>
+                </a>
+                <div class="gitLogo">
+                    <a href="https://github.com/Alma20UK" target=”_blank”>
+                        <image src="Media/GitLogo.png" alt="GitHub Logo"></image>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- 5 Static stars that overlay the animated background -->
+            <div class="staticStar1 star"></div>
+            <div class="staticStar2 star"></div>
+            <div class="staticStar3 star"></div>
+            <div class="staticStar4 star"></div>
+            <div class="staticStar5 star"></div>
+
+            <!-- Animated shooting stars that 'fire' periodically -->
+            <div class="shootingStar1 shootingStar"></div>
+            <div class="shootingStar2 shootingStar"></div>
+            <div class="shootingStar3 shootingStar"></div>
+            <div class="shootingStar4 shootingStar"></div>
+            <div class="shootingStar5 shootingStar"></div>
+
+            <div class="wrapper">
+                <!-- 
+                    Conatiner for the website video, The text associated with the video and the 'planetary' button that links to the actual website.
+                     There is a mobilve version and non-mobile version with different styling.
+                -->
+                <div class="videoContainer">
+                    <div class="textContainer">
+                        <video class="mobileVideo" alt="Video of beer colour app website" autoplay muted loop playsinline src="Media/BeerColour.mp4"></video>
+                        <h2>Beer Colour App</h2>
+                        <p>A web app built for the Newcastle based brewery, Errant. The app can be used to assign an
+                            'SRM' colour value, which brewers use to categorise their beer.
+                        </p>
+                        <a href="http://brewstyle.co.uk/" target="_blank">
+                            <div class="beerMoon mobileMoon" id="beerMoon" onmouseover="visitBeerLabel()"
+                                onmouseout="hideVisitBeerLabel()">
+                                <div class="label" id="visitLabel">Visit website</div>
+                            </div>
+                        </a>
+                    </div>
+                    <video class=nonMobileVideo alt="Video of beer colour app website" autoplay muted loop playsinline src="Media/BeerColour.mp4"></video>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+</body>
+
+</html>
